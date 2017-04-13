@@ -1,0 +1,60 @@
+.feedback {
+    background-color: #f6f6f6;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    .item {
+        padding: 40px 0 60px 0;
+        font-size: 48px;
+        text-align: center;
+        @media screen and (max-width: @width-phone) {
+            padding: 30px 0 30px 0;
+        }
+    }
+        &-block {
+            background-color: #dddddd;
+            display: inline-block;
+            text-align: center;
+            width: 40%;
+            height: auto;
+            margin-right: 45px;
+            margin-bottom: 56px;
+            @media screen and (max-width: @width-phone){
+                display: block;
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .icon {
+                border: 1px solid #f6f6f6;
+                border-radius: 50%;
+                vertical-align: 0;
+                margin-top: 10px;
+                
+            }
+            .presentation {
+                width: 50%;
+                display: inline-block;
+                margin: 10px;
+                .who {
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                .from {
+                    font-size: 16px;
+                    text-align: left;
+                }
+                .when {
+                    font-size: 16px;
+                }
+                
+            }
+            .response {
+                text-align: left;
+                padding-bottom: 10px;
+            }
+            
+            
+            
+        }
+}

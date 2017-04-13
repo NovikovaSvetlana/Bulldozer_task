@@ -1,0 +1,33 @@
+.sales {
+    height: 205px;
+    background-color: @color-main-grey;
+    text-align: center;
+    @media screen and (max-width: @width-tablet){
+        height: auto;
+        border-bottom: 2px solid #d7d7d7;
+    }
+    @media screen and (max-width: @width-phone){
+        top: 0;
+        height: 193px;
+    }
+    
+    .text-center {
+        font-family: Times New Roman;
+         padding-top: 36px;
+        
+        .first {
+            font-size: 48px;
+            padding-bottom: 15px;
+        }
+        .second {
+            font-size: 30px;
+            padding-bottom: 25px;
+        }
+        @media screen and (max-width: @width-tablet){
+        padding-top: 26px;
+        }
+        @media screen and (max-width: @width-phone){
+            padding-top: 48px;
+        }
+    }
+}

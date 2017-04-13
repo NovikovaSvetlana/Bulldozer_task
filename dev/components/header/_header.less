@@ -1,0 +1,89 @@
+.header {
+    height: auto;
+    border: 1px solid @color-dark-gray;
+    @media screen and (max-width: @width-tablet){
+        height: 121px;
+    }
+    @media screen and (max-width: @width-phone){
+        height: auto;
+    }
+    background-color: @color-dark-gray;
+    &:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+    .container div {
+        display: inline-block;
+        @media screen and (max-width: @width-phone){
+            display: block;
+            text-align: center;
+        }
+    }
+    &-logo {
+        margin-top: 29px;
+//        width: 30px;
+        @media screen and (max-width: @width-tablet){
+             margin-top: 24px;
+        }
+        @media screen and (max-width: @width-phone){
+            padding-top: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    .registration {
+        padding: 0;
+        border: 0;
+        height: 37px;
+        width: 100%;
+        font-size: 18px;
+        color: white;
+        background: linear-gradient(to top, #b07f00, #f3af00);
+        position: relative;
+        top: -10px;
+        margin-bottom:  30px;
+        @media screen and (max-width: @width-tablet){
+            height: 50px;
+            font-size: 24px;
+            
+        }
+        @media screen and (max-width: @width-phone){
+            height: 50px;
+            font-size: 24px;
+            width: 250px;
+            top: 0;
+            margin-bottom: 10px;
+        }
+        
+    }
+    &-callback {
+        float: right;
+        color: white;
+        font-size: 14px;
+        margin-top: 29px;
+            @media screen and (max-width: @width-tablet){
+                font-size: 16px;
+            }
+            @media screen and (max-width: @width-phone){
+                font-size: 18px;
+                float: none;
+                .icon {
+                    position: relative;
+                    top: 25px;
+                    left: 30%;
+                }
+                margin-top: 15px;
+            }
+        .phone {
+            font-size: 18px;
+            margin-top: 7px;
+                @media screen and (max-width: @width-tablet){
+                    font-size: 18px;
+                }
+                @media screen and (max-width: @width-phone){
+                    font-size: 24px;
+                }
+        }
+        
+    }
+}

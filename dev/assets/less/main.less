@@ -1,0 +1,70 @@
+@import "imports/_setting";
+@import "imports/_reset";
+@import "imports/_mixins";
+@import "imports/_grid";
+@import "imports/_icon";
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+
+	@media screen and (min-width: @width-tablet){
+		width: 800px;
+	}
+
+	@media screen and (min-width: @width-desktop){
+		width: 1000px;
+	}
+}
+
+.underline {
+    text-decoration: underline;
+}
+.text{
+	&-center{
+		text-align: center;
+        color: white;
+        font-family: @font-family;
+	}
+}
+.black {
+    color: black;
+}
+.dropdown{
+	position: relative;
+	&-btn{
+		position: relative;
+		padding-right: 20px;
+		.dropdown-triangle;
+		@media screen and (min-width: @width-tablet){
+			.dropdown-triangle(white, 4px);
+		}
+	}
+	&-list{
+		display: none;
+		position: absolute;
+		width: 100%;
+		white-space: nowrap;
+		padding: 10px;
+		top: 120%;
+		&.active{
+			display: block;
+		}
+	}
+}
+
+.action {
+            color: #f3af00;
+            
+        }
+.inline{
+    .inline(top);
+}
+@import "../../components/header/_header";
+@import "../../components/header/header_sales/_header-sales";
+@import "../../components/banner/_banner";
+@import "../../components/content/_content";
+@import "../../components/content/content-form/_content-form";
+@import "../../components/feedback/_feedback";
+@import "../../components/footer/_footer";
+
